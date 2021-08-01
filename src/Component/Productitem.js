@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { propTypes } from 'react-bootstrap/esm/Image';
+import PropTypes from 'prop-types';
 
 const Productitem = ({items,click}) => {
     return (
@@ -14,7 +14,5 @@ const Productitem = ({items,click}) => {
         </div>
     )
 }
-Productitem.propTypes={
-    click :PropTypes.function
-  }
+
 export default Productitem

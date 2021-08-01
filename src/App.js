@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Productlist from "./Component/Productlist";
+import Footer from "./Component/Footer";
 
 function App() {
   const products = [
@@ -26,6 +27,14 @@ function App() {
   return (
     <div className="App">
       <Productlist produits={products} />
+      <Footer>
+        <br></br>
+        <br></br>
+        <center>
+        <h5>Thank you for your attention</h5>
+        <p>CopyRight F1</p>
+        </center>
+      </Footer>
     </div>
   );
 }
