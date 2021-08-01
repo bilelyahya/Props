@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Productlist from "./Component/Productlist";
 
 function App() {
+  const products = [
+    {
+      imgSrc:
+        "https://www.mercedes-benz.ch/fr/passengercars/mercedes-benz-cars/models/a-class/hatchback-w177/_jcr_content/image.MQ6.2.2x.20210505083324.png",
+      name: "A-Class",
+      price: "129000 DT",
+    },
+    {
+      imgSrc:
+        "https://www.sayarti.tn/wp-content/uploads/2021/04/mercedes-benz-glc-prix-amg-prix-tunisie.jpg",
+      name: "GLC",
+      price: "210000 DT",
+    },
+    {
+      imgSrc:
+        "https://www.mercedes-benz.fr/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/_jcr_content/image.MQ6.2.2x.20201023143932.png",
+      name: "S-Class",
+      price: "450000 DT",
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Productlist produits={products} />
     </div>
   );
 }
